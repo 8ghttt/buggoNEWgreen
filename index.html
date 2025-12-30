@@ -253,7 +253,6 @@
             gamepad.buttons.forEach((button, index) => {
                 const selector = buttonMap[index];
                 
-                // Stick Button (L3/R3) Handling
                 if (selector && (selector.includes('.stick.main.left') || selector.includes('.stick.main.right'))) {
                     const genericSelector = selector.replace('.main', '');
                     const elements = document.querySelectorAll('.stick-container' + genericSelector.replace('.stick', ' .stick'));
@@ -390,4 +389,5 @@
     </script>
 </body>
 </html>
+
 
